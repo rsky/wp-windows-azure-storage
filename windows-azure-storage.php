@@ -115,7 +115,7 @@ if (get_option('azure_storage_use_for_default_upload') == 1) {
     );
     
     // Hook for handling blog posts via xmlrpc. This is not full proof check
-    add_filter('content_save_pre', 'windows_azure_storage_content_save_pre');
+    //add_filter('content_save_pre', 'windows_azure_storage_content_save_pre');
     
     //TODO: implement wp_unique_filename filter once it is available in WordPress
     add_filter('wp_handle_upload_prefilter', 'windows_azure_storage_wp_handle_upload_prefilter');
